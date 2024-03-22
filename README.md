@@ -421,3 +421,8 @@ If you want to uninstall algorithms, it is as simple as:
 
 Thanks to [all the contributors](https://github.com/keon/algorithms/graphs/contributors)
 who helped in building the repo.
+
+
+$$
+x(t+\epsilon) -x(t) = \epsilon \frac{x(t)[U_A(t) - \hat{U(t)}] }{1- \epsilon + \epsilon \hat{U(t)}}
+$$
