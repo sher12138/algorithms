@@ -32,10 +32,13 @@ $$
 
 *累加奖励：*
 $$
-\R(\gamma) = \sum_{i=0}^{n-1} \gamma^i R_i{(\gamma)} \\
+\R(\gamma) = \sum_{i=0}^{n-1} \lambda^i R_i{(\gamma)} \\
 R_i{(\gamma)} = R( \gamma_i | s_i) \\ 
 式中 s_i  表示环境状态。
 $$
+
+**带衰减的 MDP 表达**
+
 
 每个时间 $t$ 选择一系列的动作 $\gamma = (\gamma_0, \gamma_1, \cdots, \gamma_{n-1})$，其中 $\gamma_i = (a_i, \omega_i)$。每个动作 $\gamma_i$ 有一个奖励 $R_i(\gamma_i)$。累加奖励 $\R(\gamma)$ 是所有动作的奖励的和。 目的是在 "a horizon of length n"最大化累加奖励。
 假设在每个步骤顺序应用动作
@@ -62,7 +65,7 @@ level-k 博弈策略，动作选择方法：
 $$
 \begin{equation}
 \begin{align*}
-\R_k(\gamma) &= \R(\gamma | \hat{\gamma}_{k-1}^{other}) = \sum_{i=0}^{n-1} R_i(\gamma | \hat{\gamma}_{k-1}^{other})  \\ 
+\R_k(\gamma) &= \R(\gamma | \hat{\gamma}_{k-1}^{other}) = \sum_{i=0}^{n-1} \lambda^i R_i(\gamma | \hat{\gamma}_{k-1}^{other})  \\ 
 \hat{\gamma}_k^{ego}  &\in \argmax_{\gamma_i \in \Tau} \R_k(\gamma), 
 \end{align*}
 \end{equation}
@@ -108,3 +111,55 @@ k^\prime \in \argmin_{k \in \{0,1,2\}} || \gamma^{other} - \hat{\gamma}_{k,0}^{o
 P(k^\prime)  \leftarrow P(k^\prime) + \Delta P,\\
 P(k) \leftarrow P(k) / ( \sum^2_{k=0} P(k)) 
 $$
+
+
+
+## Improvment 
+
+
+
+更新步 --> 信念修正 
+
+交互
+
+```
+1. 生成各代理当前状态下的 l0, l1,l2 最优动作序列：
+    - l2 ,假设自车l1 / l1--> 假设自车l0, l0 --> 静止 
+2. 基于各代理动作序列，求自车最优动作序列。 
+    - 
+3. 获取第一步下发，并获取各代理新动作 
+4. 基于新动作实现代理信念更新。 
+
+```
+
+
+```python
+
+class Action:
+    pass 
+
+class ActionSeqence:
+    pass 
+
+class Agent:
+    pass 
+
+class InterGame:
+    pass 
+
+
+
+
+class LevelK:
+
+    def belief_update():
+        pass 
+    
+    # 生成指定主体和level等级的最优动作序列 
+    def get_opt_action_seq():
+        pass 
+
+    def next_ego_opt_action():
+        pass 
+
+```
