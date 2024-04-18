@@ -1,0 +1,13 @@
+# Define all coms in DAG streaming.
+
+module_config {
+  module_library : "lib/librouting.so"
+  components {
+    class_name : "RoutingComponent"
+    config {
+      name: "routing"
+      flag_file_path: ""
+      config_file_path: ""
+    }
+  }
+}

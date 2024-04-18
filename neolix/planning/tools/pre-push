@@ -1,0 +1,12 @@
+#!/bin/bash
+
+director=`pwd`
+project_path=${director%tools}
+echo "${project_path}"
+cd ${project_path}
+
+python3 tools/git_check.py
+
+#git add VERSION
+#git commit -m "" --amend --date="`date -R`" 
+#git push -f

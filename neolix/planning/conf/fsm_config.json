@@ -1,0 +1,8 @@
+{
+  "fsm_states_pool": {
+    "PLANNING_INIT": "ADU_ROAD",
+    "PLANNING_FAIL": "ADU_ROAD",
+    "PLANNING_CRUISE": "ADU_ROAD",
+    "PLANNING_ABNORMAL": "ADU_ROAD"
+  }
+}

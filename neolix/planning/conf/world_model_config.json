@@ -1,0 +1,6 @@
+{
+    "odom_pose_frequency": 100,
+    "utm_pose_frequency": 50,
+    "ego_kinematics_estimation": false,
+    "localization_error_code_obsolete_time": 3.0
+}

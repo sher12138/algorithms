@@ -1,0 +1,13 @@
+set(CYBERVERSE_ROOT "${CMAKE_INSTALL_PREFIX}" CACHE PATH "CYBERVERSE_ROOT")
+set(CYBERVERSE_INCLUDE_DIR "${CYBERVERSE_ROOT}/include")
+set(CYBERVERSE_LIB_DIR "${CYBERVERSE_ROOT}/lib")
+
+include_directories(${CYBERVERSE_INCLUDE_DIR})
+include_directories(${CYBERVERSE_INCLUDE_DIR}/map_common)
+include_directories(${CYBERVERSE_INCLUDE_DIR}/map_data)
+include_directories(${CYBERVERSE_INCLUDE_DIR}/map_index)
+include_directories(${CYBERVERSE_INCLUDE_DIR}/map_model)
+include_directories(${CYBERVERSE_INCLUDE_DIR}/metric_map)
+include_directories(${CYBERVERSE_INCLUDE_DIR}/semantic_map)
+include_directories(${CYBERVERSE_INCLUDE_DIR}/topological_map)
+link_directories(${CYBERVERSE_LIB_DIR})

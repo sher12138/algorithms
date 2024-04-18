@@ -1,0 +1,14 @@
+begin_state
+2
+INIT
+DEFAULT
+end_state
+begin_change_flag
+2
+T0_NONE_INIT
+T1_INIT_DEFAULT
+end_change_flag
+begin_transition
+1
+INIT T1_INIT_DEFAULT DEFAULT
+end_transition

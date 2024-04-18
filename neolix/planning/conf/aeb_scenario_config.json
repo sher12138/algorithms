@@ -1,0 +1,37 @@
+{
+    "scenario": {
+        "default_scenario": {
+            "OFF_pipeline": [
+                "ProcessInputFunctionTask",
+                "AebDeciderFunctionTask"
+            ],
+            "INIT_pipeline": [
+                "ProcessInputFunctionTask",
+                "AebDeciderFunctionTask"
+            ],
+            "STANDBY_pipeline": [
+                "ProcessInputFunctionTask",
+                "AebAlgorithmFunctionTask",
+                "AebDeciderFunctionTask"
+            ],
+            "ACTIVE_pipeline": [
+                "ProcessInputFunctionTask",
+                "AebAlgorithmFunctionTask",
+                "AebDeciderFunctionTask"
+            ],
+            "REJECT_pipeline": [
+                "ProcessInputFunctionTask",
+                "AebAlgorithmFunctionTask",
+                "AebDeciderFunctionTask"
+            ],
+            "FAILURE_REVERSIBLE_pipeline": [
+                "ProcessInputFunctionTask",
+                "AebDeciderFunctionTask"
+            ],
+            "FAILURE_IRREVERSIBLE_pipeline": [
+                "ProcessInputFunctionTask",
+                "AebDeciderFunctionTask"
+            ]
+        }
+    }
+}

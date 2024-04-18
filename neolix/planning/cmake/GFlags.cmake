@@ -1,0 +1,11 @@
+set(GFlags_FOUND 1 CACHE INTERNAL "GFlags_FOUND")
+set(GFlags_INCLUDE_DIRS ${TOOLCHAIN_PATH}/usr/local/include/gflags CACHE INTERNAL "GFlags_INCLUDE_DIRS")
+set(GFlags_LIBRARY_DIRS ${TOOLCHAIN_PATH}/usr/local/lib CACHE INTERNAL "GFlags_LIBRARY_DIRS")
+file(GLOB LIBRARIES "${GFlags_LIBRARY_DIRS}/libgflags*.so")
+set(GFlags_LIBRARIES ${LIBRARIES} CACHE INTERNAL "GFlags_LIBRARIES")
+
+include_directories(${GFlags_INCLUDE_DIRS})
+link_directories(${GFlags_LIBRARY_DIRS})
+message(STATUS "GFlags_INCLUDE_DIRS:" ${GFlags_INCLUDE_DIRS})
+message(STATUS "GFlags_LIBRARY_DIRS:" ${GFlags_LIBRARY_DIRS})
+message(STATUS "GFlags_LIBRARIES:" ${GFlags_LIBRARIES})

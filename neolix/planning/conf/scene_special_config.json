@@ -1,0 +1,85 @@
+{
+  "in_lane_uturn": [
+    {
+      "lane_id": "253623087_1_-1",
+      "start_s": 53.0,
+      "end_s": 73.0,
+      "routing_end_lane_id": "257323058_1_-1",
+      "routing_end_s": 46.9129,
+      "routing_end_x": 803035.41691317863,
+      "routing_end_y": 2501224.2829663442,
+      "routing_end_heading": -3.0
+    },
+    {
+      "lane_id": "281071041_1_-1",
+      "start_s": 5.0,
+      "end_s": 20.0,
+      "routing_end_lane_id": "257323058_1_-1",
+      "routing_end_s": 46.9129,
+      "routing_end_x": 803035.41691317863,
+      "routing_end_y": 2501224.2829663442,
+      "routing_end_heading": -3.112
+    }
+  ],
+  "freespace_refer_line_in": [
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "theta": 0.0
+    }
+  ],
+  "freespace_refer_line_out": [
+    {
+      "x": 456402.5,
+      "y": 4425453.5,
+      "theta": -0.064079
+    }
+  ],
+  "bias_driving_setting": [
+    {
+      "lane_id": "fake_1",
+      "start_s": -1000.0,
+      "end_s": -1000.0,
+      "bias_val": 0.0
+    },
+    {
+      "lane_id": "fake_2",
+      "start_s": -1000.0,
+      "end_s": -1000.0,
+      "bias_val": 0.0
+    }
+  ],
+  "parking": {
+    "left_parking_ids": [
+      "310000190001"
+    ],
+    "c_type_parking_ids": [
+      "215299052007",
+      "215299052008",
+      "310000190001",
+      "310000190002"
+    ],
+    "not_parking_out_ids": [
+      "310000190001",
+      "310000190002"
+    ]
+  },
+  "parking_thresholds": [
+    {
+      "id": "215299052012",
+      "dis": 7.0
+    },
+    {
+      "id": "215299051008",
+      "dis": 1.2
+    },
+    {
+      "id": "310000190001",
+      "dis": 10.0
+    },
+    {
+      "id": "310000190002",
+      "dis": 7.0
+    }
+  ]
+}

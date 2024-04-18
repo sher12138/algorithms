@@ -1,0 +1,85 @@
+# Define all coms in DAG streaming.
+
+module_config {
+    module_library : "lib/libaeb.so"
+    components {
+        class_name : "AebComponent"
+	    config {
+            name: "Aeb"
+            flag_file_path: ""
+            config_file_path: ""
+        }
+    }
+}
+
+module_config {
+    module_library : "lib/libplanning.so"
+    components {
+        class_name : "PlanningComponent"
+	    config {
+            name: "PlanningComponent"
+            flag_file_path: "conf/planning.flag"
+            config_file_path: ""
+        }
+    }
+}
+
+module_config {
+  module_library : "lib/librouting.so"
+  components {
+    class_name : "RoutingComponent"
+    config {
+      name: "RoutingComponent"
+      flag_file_path: ""
+      config_file_path: ""
+    }
+  }
+}
+
+module_config {
+    module_library : "lib/libplanning.so"
+    components {
+        class_name : "WorldModelComponent"
+	    config {
+            name: "WorldModelComponent"
+            flag_file_path: ""
+            config_file_path: ""
+        }
+    }
+}
+
+module_config {
+    module_library : "lib/libcontrol.so"
+    components {
+        class_name : "ControlComponent"
+        config {
+            name: "control"
+            config_file_path: "conf/control.pb.txt"
+            flag_file_path: "conf/control.flag"
+        }
+    }
+}
+
+module_config {
+    module_library : "lib/libpatrol_neolix.so"
+    components {
+        class_name : "PatrolStrategy"
+        config {
+            name: "patrol_xavier_control_strategy"
+            config_file_path: "conf/patrol_erritems_xavier_x3s.conf"
+            flag_file_path : "conf/patrol_control.flag"
+        }
+    }
+}
+
+module_config {
+    module_library : "lib/libconfig_server.so"
+    components {
+        class_name : "ConfigServerComponent"
+        config {
+            name: "ConfigServer"
+            flag_file_path: ""
+            config_file_path: ""
+        }
+    }
+}

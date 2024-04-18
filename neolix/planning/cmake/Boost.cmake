@@ -1,0 +1,11 @@
+set(Boost_FOUND 1 CACHE INTERNAL "Boost_FOUND")
+set(Boost_INCLUDE_DIRS ${TOOLCHAIN_PATH}/usr/local/include/boost CACHE INTERNAL "Boost_INCLUDE_DIRS")
+set(Boost_LIBRARY_DIRS ${TOOLCHAIN_PATH}/usr/local/lib CACHE INTERNAL "Boost_LIBRARY_DIRS")
+file(GLOB LIBRARIES "${Boost_LIBRARY_DIRS}/libboost*.so")
+set(Boost_LIBRARIES ${LIBRARIES} CACHE INTERNAL "Boost_LIBRARIES")
+
+include_directories(${Boost_INCLUDE_DIRS})
+link_directories(${Boost_LIBRARY_DIRS})
+message(STATUS "Boost_INCLUDE_DIRS:" ${Boost_INCLUDE_DIRS})
+message(STATUS "Boost_LIBRARY_DIRS:" ${Boost_LIBRARY_DIRS})
+message(STATUS "Boost_LIBRARIES:" ${Boost_LIBRARIES})

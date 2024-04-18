@@ -1,0 +1,44 @@
+{
+  "default_group": [
+    {
+      "lateral_expand_dist": [
+        0.0,
+        0.0,
+        2.0,
+        0.01
+      ]
+    },
+    {
+      "longitudianl_expand_dist": [
+        1.0,
+        0.0,
+        10.0,
+        0.01
+      ]
+    },
+    {
+      "stop_safe_dist": [
+        0.0,
+        0.0,
+        2.0,
+        0.01
+      ]
+    },
+    {
+      "polygon_distance_step": [
+        0.05,
+        0.0,
+        1.0,
+        0.01
+      ]
+    },
+    {
+      "polygon_distance_threshold": [
+        0.1,
+        0.0,
+        1.0,
+        0.01
+      ]
+    }
+  ]
+}

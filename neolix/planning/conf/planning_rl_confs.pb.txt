@@ -1,0 +1,22 @@
+predictor_conf {
+  cruise_mlp_predictor {
+    time: 3
+    score: 300
+  }
+  junction_mlp_predictor {
+    time: 3
+    score: 300
+  }
+  unknown_mlp_predictor {
+    time: 3
+    score: 200
+  }
+  keep_lane_predictor {
+    time: 2
+    score: 200
+  }
+  free_move_predictor {
+    time: 1
+    score: 20
+  }
+}

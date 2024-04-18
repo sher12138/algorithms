@@ -1,0 +1,15 @@
+{
+   "trt_path":"",
+  "orig_size":2,
+  "rot_size":4,
+  "all_trajectory_size":24,
+  "all_trajectory_mask_size":24,
+  "all_trajectory_len_size":24,
+  "target_past_trajectory_size":1,
+  "target_past_traj_mask_size":24,
+  "map_feature_size":24,
+  "map_feature_mask_size":24,
+  "map_feature_len_size":1,
+  "past_target_orig_size":24,
+  "past_target_orig_len_size":1
+}

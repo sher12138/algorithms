@@ -1,0 +1,8 @@
+--log_dir=log
+--logtostderr=0
+--save_container_msg=false
+--save_obstacle_feature=false
+--max_num_write_data=50
+--prediction_trajectory_time_length=8.0
+--prediction_trajectory_time_resolution=0.1
+

@@ -31,6 +31,8 @@ import random
 import model 
 import matplotlib.pyplot as plt 
 from matplotlib.animation import FuncAnimation
+from convex_opt import solver
+
 
 time_gap = 0.1
 
@@ -85,13 +87,18 @@ class ActionSeqence:
         self.act_seq = []
         self.value = 0
 
-    def value_cal(self,other_agent_act_seq):
-        pass 
-
     def add_act(self,act:Action):
         self.act_seq.append(act)
 
+class StateSeqence(ActionSeqence):
+    def __init__(self,init_state) -> None:
+        super().__init__()
+        self.init_state = init_state
 
+
+class Trajectory:
+    def __init__(self) -> None:
+        self.state_seq = StateSeqence()
 
 """"""
 class Agent:
@@ -122,16 +129,13 @@ class Agent:
 
     def generate_opt_tra(self,tra,level):
         # 基于给出的 对象的 tra ，更新level下的结果 
-        if len(tra) == 0:
-            self.real_act_seq[level] = LevelK.trajectory_generate(ego,tra)  # 轨迹生成部分 
+        self.real_act_seq[level] = LevelK.trajectory_generate(ego,tra)  # 轨迹生成部分 
 
 
 class EgoAgent(Agent):
     def __init__(self,aim) -> None:
         super().__init__()
         self.aim_pos = aim
-
-
 
 class Math:
     @staticmethod
@@ -181,7 +185,8 @@ class LevelK:
     @staticmethod
     def trajectory_generate(ego:Agent,tra):
         # 轨迹生成，  A* 
-        pass 
+        # 优化 --> 
+        solver(ego,tra)
 
 
 

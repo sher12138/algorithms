@@ -1,0 +1,11 @@
+set(Glog_FOUND 1 CACHE INTERNAL "Glog_FOUND")
+set(Glog_INCLUDE_DIRS ${TOOLCHAIN_PATH}/usr/local/include/glog CACHE INTERNAL "Glog_INCLUDE_DIRS")
+set(Glog_LIBRARY_DIRS ${TOOLCHAIN_PATH}/usr/local/lib CACHE INTERNAL "Glog_LIBRARY_DIRS")
+file(GLOB LIBRARIES "${Glog_LIBRARY_DIRS}/libglog*.so")
+set(Glog_LIBRARIES ${LIBRARIES} CACHE INTERNAL "Glog_LIBRARIES")
+
+include_directories(${Glog_INCLUDE_DIRS})
+link_directories(${Glog_LIBRARY_DIRS})
+message(STATUS "Glog_INCLUDE_DIRS:" ${Glog_INCLUDE_DIRS})
+message(STATUS "Glog_LIBRARY_DIRS:" ${Glog_LIBRARY_DIRS})
+message(STATUS "Glog_LIBRARIES:" ${Glog_LIBRARIES})

@@ -1,0 +1,18 @@
+{
+    "imitation_learning": {
+        "model_input_shape": {
+            "frame_num": 5,
+            "dimension": 1815
+        },
+        "model_path": "/home/caros/cyberrt/conf/reinforcement_learning_model/ImitationNet_trt.engine"
+    },
+    "feature_net": {
+        "model_path": "/home/caros/cyberrt/conf/reinforcement_learning_model/FeatureNet_trt.engine"
+    },
+    "two_stage_net": {
+        "model_path": "/home/caros/cyberrt/conf/reinforcement_learning_model/TwoStageNet_trt.engine"
+    },
+    "urban_driver": {
+        "model_path": "/home/caros/cyberrt/conf/reinforcement_learning_model/model_urbandriver_trt.engine"
+    }
+}

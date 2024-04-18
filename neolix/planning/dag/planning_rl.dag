@@ -1,0 +1,15 @@
+module_config {
+  module_library : "lib/libplanning_rl.so"
+  components {
+    class_name : "PlanningRLComponent"
+    config {
+      name: "PlanningRL"
+      flag_file_path: "conf/planning_rl.flag"
+      config_file_path: "conf/planning_rl_confs.pb.txt"
+      readers: [
+          {channel: "/perception/obstacles"},
+          {channel: "/localization/100hz/localization_pose"}
+      ]
+    }
+  }
+}

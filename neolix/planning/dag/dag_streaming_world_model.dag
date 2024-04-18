@@ -1,0 +1,13 @@
+# Define all coms in DAG streaming.
+
+module_config {
+    module_library : "lib/libplanning.so"
+    components {
+        class_name : "WorldModelComponent"
+	    config {
+            name: "world_model"
+            flag_file_path: ""
+            config_file_path: ""
+        }
+    }
+}

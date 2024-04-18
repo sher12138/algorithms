@@ -1,0 +1,200 @@
+goal path (.*?):.*?, (.*?):.*?, (.*?):.*?\n
+goal path mean:(.*?), var:.*?, gain:.*?\n
+goal path mean:.*?, var:(.*?), gain:.*?\n
+goal path mean:.*?, var:.*?, gain:(.*?)\n
+
+opt vs ori --  (.*?): .*? , (.*?): .*? , (.*?): .*? ,(.*?): .*? , (.*?): .*? , (.*?): .*? , (.*?): .*? , (.*?): .*?\n
+opt vs ori --  opt_x: (.*?) , opt_y: .*? , ori_x: .*? , ori_y: .*? , left_x: .*? , left_y: .*? , right_x: .*? , right_y: .*?\n
+opt vs ori --  opt_x: .*? , opt_y: (.*?) , ori_x: .*? , ori_y: .*? , left_x: .*? , left_y: .*? , right_x: .*? , right_y: .*?\n
+opt vs ori --  opt_x: .*? , opt_y: .*? , ori_x: (.*?) , ori_y: .*? , left_x: .*? , left_y: .*? , right_x: .*? , right_y: .*?\n
+opt vs ori --  opt_x: .*? , opt_y: .*? , ori_x: .*? , ori_y: (.*?) , left_x: .*? , left_y: .*? , right_x: .*? , right_y: .*?\n
+opt vs ori --  opt_x: .*? , opt_y: .*? , ori_x: .*? , ori_y: .*? , left_x: (.*?) , left_y: .*? , right_x: .*? , right_y: .*?\n
+opt vs ori --  opt_x: .*? , opt_y: .*? , ori_x: .*? , ori_y: .*? , left_x: .*? , left_y: (.*?) , right_x: .*? , right_y: .*?\n
+opt vs ori --  opt_x: .*? , opt_y: .*? , ori_x: .*? , ori_y: .*? , left_x: .*? , left_y: .*? , right_x: (.*?) , right_y: .*?\n
+opt vs ori --  opt_x: .*? , opt_y: .*? , ori_x: .*? , ori_y: .*? , left_x: .*? , left_y: .*? , right_x: .*? , right_y: (.*?)\n
+
+(.*?):  .*?,  (.*?):  .*?,  (.*?):  .*?,  (.*?):  .*?,  (.*?):  .*?,  (.*?):  .*?,  (.*?):  .*?, (.*?):  .*?\n
+x:  (.*?),  y:  .*?,  v:  .*?,  theta:  .*?,  acc_lon:  .*?,  acc_lat:  .*?,  steer_angle:  .*?, kappa:  .*?\n
+x:  .*?,  y:  (.*?),  v:  .*?,  theta:  .*?,  acc_lon:  .*?,  acc_lat:  .*?,  steer_angle:  .*?, kappa:  .*?\n
+x:  .*?,  y:  .*?,  v:  (.*?),  theta:  .*?,  acc_lon:  .*?,  acc_lat:  .*?,  steer_angle:  .*?, kappa:  .*?\n
+x:  .*?,  y:  .*?,  v:  .*?,  theta:  (.*?),  acc_lon:  .*?,  acc_lat:  .*?,  steer_angle:  .*?, kappa:  .*?\n
+x:  .*?,  y:  .*?,  v:  .*?,  theta:  .*?,  acc_lon:  (.*?),  acc_lat:  .*?,  steer_angle:  .*?, kappa:  .*?\n
+x:  .*?,  y:  .*?,  v:  .*?,  theta:  .*?,  acc_lon:  .*?,  acc_lat:  (.*?),  steer_angle:  .*?, kappa:  .*?\n
+x:  .*?,  y:  .*?,  v:  .*?,  theta:  .*?,  acc_lon:  .*?,  acc_lat:  .*?,  steer_angle:  (.*?), kappa:  .*?\n
+x:  .*?,  y:  .*?,  v:  .*?,  theta:  .*?,  acc_lon:  .*?,  acc_lat:  .*?,  steer_angle:  .*?, kappa:  (.*?)\n
+
+cartesian  index: .*? , (.*?): .*? , (.*?): .*? , (.*?): .*? , (.*?): .*? , (.*?): .*? , (.*?): .*?\n
+cartesian  index: .*? , x: (.*?) , y: .*? , left_x: .*? , left_y: .*? , right_x: .*? , right_y: .*?\n
+cartesian  index: .*? , x: .*? , y: (.*?) , left_x: .*? , left_y: .*? , right_x: .*? , right_y: .*?\n
+cartesian  index: .*? , x: .*? , y: .*? , left_x: (.*?) , left_y: .*? , right_x: .*? , right_y: .*?\n
+cartesian  index: .*? , x: .*? , y: .*? , left_x: .*? , left_y: (.*?) , right_x: .*? , right_y: .*?\n
+cartesian  index: .*? , x: .*? , y: .*? , left_x: .*? , left_y: .*? , right_x: (.*?) , right_y: .*?\n
+cartesian  index: .*? , x: .*? , y: .*? , left_x: .*? , left_y: .*? , right_x: .*? , right_y: (.*?)\n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+distance (.*?)=.*? , (.*?)=.*? , (.*?)=.*? , (.*?)=.*? , (.*?)=.*? , (.*?)=.*? , (.*?)=.*? , (.*?)=.*? , (.*?)=.*?\n
+distance ind=(.*?) , x0=.*? , y0=.*? , x=.*? , y=.*? , xl=.*? , yl=.*? , xr=.*? , yr=.*?\n
+distance ind=.*? , x0=(.*?) , y0=.*? , x=.*? , y=.*? , xl=.*? , yl=.*? , xr=.*? , yr=.*?\n
+distance ind=.*? , x0=.*? , y0=(.*?) , x=.*? , y=.*? , xl=.*? , yl=.*? , xr=.*? , yr=.*?\n
+distance ind=.*? , x0=.*? , y0=.*? , x=(.*?) , y=.*? , xl=.*? , yl=.*? , xr=.*? , yr=.*?\n
+distance ind=.*? , x0=.*? , y0=.*? , x=.*? , y=(.*?) , xl=.*? , yl=.*? , xr=.*? , yr=.*?\n
+distance ind=.*? , x0=.*? , y0=.*? , x=.*? , y=.*? , xl=(.*?) , yl=.*? , xr=.*? , yr=.*?\n
+distance ind=.*? , x0=.*? , y0=.*? , x=.*? , y=.*? , xl=.*? , yl=(.*?) , xr=.*? , yr=.*?\n
+distance ind=.*? , x0=.*? , y0=.*? , x=.*? , y=.*? , xl=.*? , yl=.*? , xr=(.*?) , yr=.*?\n
+distance ind=.*? , x0=.*? , y0=.*? , x=.*? , y=.*? , xl=.*? , yl=.*? , xr=.*? , yr=(.*?)\n
+
+
+
+
+
+
+
+
+vec (.*?):.*?  (.*?):.*?  (.*?):.*?\n
+vec angle:(.*?)  dis_l:.*?  dis_r:.*?\n
+vec angle:.*?  dis_l:(.*?)  dis_r:.*?\n
+vec angle:.*?  dis_l:.*?  dis_r:(.*?)\n
+
+
+distance: (.*?) = .*? , (.*?) = .*? , (.*?) = .*? , (.*?) = .*? , (.*?) = .*?\n
+distance: ind = (.*?) , x = .*? , y = .*? , dis_ori_l = .*? , dis_ori_r = .*?\n
+distance: ind = .*? , x = (.*?) , y = .*? , dis_ori_l = .*? , dis_ori_r = .*?\n
+distance: ind = .*? , x = .*? , y = (.*?) , dis_ori_l = .*? , dis_ori_r = .*?\n
+distance: ind = .*? , x = .*? , y = .*? , dis_ori_l = (.*?) , dis_ori_r = .*?\n
+distance: ind = .*? , x = .*? , y = .*? , dis_ori_l = .*? , dis_ori_r = (.*?)\n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+distance (.*?)=.*? , (.*?)=.*? , (.*?)=.*? , (.*?)=.*? , (.*?)=.*? , (.*?)=.*? , (.*?)=.*?\n
+distance ind=(.*?) , x=.*? , y=.*? , xl=.*? , yl=.*? , xr=.*? , yr=.*?\n
+distance ind=.*? , x=(.*?) , y=.*? , xl=.*? , yl=.*? , xr=.*? , yr=.*?\n
+distance ind=.*? , x=.*? , y=(.*?) , xl=.*? , yl=.*? , xr=.*? , yr=.*?\n
+distance ind=.*? , x=.*? , y=.*? , xl=(.*?) , yl=.*? , xr=.*? , yr=.*?\n
+distance ind=.*? , x=.*? , y=.*? , xl=.*? , yl=(.*?) , xr=.*? , yr=.*?\n
+distance ind=.*? , x=.*? , y=.*? , xl=.*? , yl=.*? , xr=(.*?) , yr=.*?\n
+distance ind=.*? , x=.*? , y=.*? , xl=.*? , yl=.*? , xr=.*? , yr=(.*?)\n
+
+
+
+
+
+
+
+
+
+distance: (.*?): .*? (.*?): .*? (.*?): .*? (.*?): .*?\n
+distance: x0: (.*?) y0: .*? dis_ori_l: .*? dis_ori_r: .*?\n
+distance: x0: .*? y0: (.*?) dis_ori_l: .*? dis_ori_r: .*?\n
+distance: x0: .*? y0: .*? dis_ori_l: (.*?) dis_ori_r: .*?\n
+distance: x0: .*? y0: .*? dis_ori_l: .*? dis_ori_r: (.*?)\n
+
+
+6\](.*?):.*? -- (.*?):.*?  (.*?):.*?  (.*?):.*? \n
+feas cost:(.*?) -- velcost:.*?  acccost:.*?  curcost:.*? \n
+feas cost:.*? -- velcost:(.*?)  acccost:.*?  curcost:.*? \n
+feas cost:.*? -- velcost:.*?  acccost:(.*?)  curcost:.*? \n
+feas cost:.*? -- velcost:.*?  acccost:.*?  curcost:(.*?) \n
+
+
+
+
+(.*?):  .*?,  (.*?):  .*?,  (.*?):  .*?,  (.*?):  .*?,  (.*?):  .*?,  (.*?):  .*?,  (.*?):  .*?, (.*?):  .*?\n
+x:  (.*?),  y:  .*?,  v:  .*?,  theta:  .*?,  acc_lon:  .*?,  acc_lat:  .*?,  steer_angle:  .*?, kappa:  .*?\n
+x:  .*?,  y:  (.*?),  v:  .*?,  theta:  .*?,  acc_lon:  .*?,  acc_lat:  .*?,  steer_angle:  .*?, kappa:  .*?\n
+x:  .*?,  y:  .*?,  v:  (.*?),  theta:  .*?,  acc_lon:  .*?,  acc_lat:  .*?,  steer_angle:  .*?, kappa:  .*?\n
+x:  .*?,  y:  .*?,  v:  .*?,  theta:  (.*?),  acc_lon:  .*?,  acc_lat:  .*?,  steer_angle:  .*?, kappa:  .*?\n
+x:  .*?,  y:  .*?,  v:  .*?,  theta:  .*?,  acc_lon:  (.*?),  acc_lat:  .*?,  steer_angle:  .*?, kappa:  .*?\n
+x:  .*?,  y:  .*?,  v:  .*?,  theta:  .*?,  acc_lon:  .*?,  acc_lat:  (.*?),  steer_angle:  .*?, kappa:  .*?\n
+x:  .*?,  y:  .*?,  v:  .*?,  theta:  .*?,  acc_lon:  .*?,  acc_lat:  .*?,  steer_angle:  (.*?), kappa:  .*?\n
+x:  .*?,  y:  .*?,  v:  .*?,  theta:  .*?,  acc_lon:  .*?,  acc_lat:  .*?,  steer_angle:  .*?, kappa:  (.*?)\n
+
+
+
+
+frenet  index: .*? , (.*?): .*? , (.*?): .*? , (.*?): .*? , (.*?): .*?\n
+frenet  index: .*? , s: (.*?) , l: .*? , left_l: .*? , right_l: .*?\n
+frenet  index: .*? , s: .*? , l: (.*?) , left_l: .*? , right_l: .*?\n
+frenet  index: .*? , s: .*? , l: .*? , left_l: (.*?) , right_l: .*?\n
+frenet  index: .*? , s: .*? , l: .*? , left_l: .*? , right_l: (.*?)\n
+
+
+
+
+
+
+
+
+statelist  index: .*? , (.*?): .*? , (.*?): .*? , (.*?): .*?\n
+statelist  index: .*? , x: (.*?) , y: .*? , theta: .*?\n
+statelist  index: .*? , x: .*? , y: (.*?) , theta: .*?\n
+statelist  index: .*? , x: .*? , y: .*? , theta: (.*?)\n
+
+
+
+frenet  index: .*? , (.*?): .*? , (.*?): .*? , (.*?): .*? , (.*?): .*?\n
+frenet  index: .*? , s: (.*?) , l: .*? , x: .*? , y: .*?\n
+frenet  index: .*? , s: .*? , l: (.*?) , x: .*? , y: .*?\n
+frenet  index: .*? , s: .*? , l: .*? , x: (.*?) , y: .*?\n
+frenet  index: .*? , s: .*? , l: .*? , x: .*? , y: (.*?)\n
+
+
+
+
+
+frenet  index: .*? , (.*?): .*? , (.*?): .*? , (.*?): .*? , (.*?): .*?\n
+frenet  index: .*? , s: (.*?) , l: .*? , left_l: .*? , right_l: .*?\n
+frenet  index: .*? , s: .*? , l: (.*?) , left_l: .*? , right_l: .*?\n
+frenet  index: .*? , s: .*? , l: .*? , left_l: (.*?) , right_l: .*?\n
+frenet  index: .*? , s: .*? , l: .*? , left_l: .*? , right_l: (.*?)\n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Vehicle State\[(.*?), (.*?), (.*?), (.*?), (.*?), (.*?), (.*?)\]:
+Vehicle State\[x, y, heading, v, a, steer_angle, pitch\]: (.*?), .*?, .*?, .*?, .*?, .*?, .*?\n
+Vehicle State\[x, y, heading, v, a, steer_angle, pitch\]: .*?, (.*?), .*?, .*?, .*?, .*?, .*?\n
+Vehicle State\[x, y, heading, v, a, steer_angle, pitch\]: .*?, .*?, (.*?), .*?, .*?, .*?, .*?\n
+Vehicle State\[x, y, heading, v, a, steer_angle, pitch\]: .*?, .*?, .*?, (.*?), .*?, .*?, .*?\n
+Vehicle State\[x, y, heading, v, a, steer_angle, pitch\]: .*?, .*?, .*?, .*?, (.*?), .*?, .*?\n
+Vehicle State\[x, y, heading, v, a, steer_angle, pitch\]: .*?, .*?, .*?, .*?, .*?, (.*?), .*?\n
+Vehicle State\[x, y, heading, v, a, steer_angle, pitch\]: .*?, .*?, .*?, .*?, .*?, .*?, (.*?)\n

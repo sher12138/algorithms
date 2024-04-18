@@ -1,0 +1,9 @@
+{
+  "config_server_period_frequency": 10,
+  "server_url": "ndp.data.neolix.cn",
+  "server_path": "/service/pro/ndp/aicardata/websocket/datatransfer",
+  "server_port": 80,
+  "connection_loss_threshold": 3,
+  "connection_security_level": 0,
+  "send_empty_data_time_threshold": 5.0
+}

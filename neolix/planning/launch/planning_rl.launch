@@ -1,0 +1,10 @@
+<cybertron>
+  <desc>cybertron modules list config</desc>
+  <version>1.0.0</version>
+  <module>
+    <name>planning_rl</name>
+    <dag_conf>planning_rl.dag</dag_conf>
+    <process_name>planning_rl</process_name>
+    <version>1.0.0</version>
+  </module>
+</cybertron>

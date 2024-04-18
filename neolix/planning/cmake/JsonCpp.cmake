@@ -1,0 +1,12 @@
+set(JsonCpp_FOUND 1 CACHE INTERNAL "JsonCpp_FOUND")
+set(JsonCpp_ROOT "${GEARS_ARCH}" CACHE PATH "JsonCpp_ROOT")
+set(JsonCpp_INCLUDE_DIRS ${JsonCpp_ROOT}/include/json CACHE INTERNAL "JsonCpp_INCLUDE_DIRS")
+set(JsonCpp_LIBRARY_DIRS ${JsonCpp_ROOT}/lib CACHE INTERNAL "JsonCpp_LIBRARY_DIRS")
+file(GLOB LIBRARIES "${JsonCpp_LIBRARY_DIRS}/libjsoncpp.so")
+set(JsonCpp_LIBRARIES ${LIBRARIES} CACHE INTERNAL "JsonCpp_LIBRARIES")
+
+include_directories(${JsonCpp_INCLUDE_DIRS})
+message(STATUS "JsonCpp_INCLUDE_DIRS: ${JsonCpp_INCLUDE_DIRS}")
+link_directories(${JsonCpp_LIBRARY_DIRS})
+message(STATUS "JsonCpp_LIBRARY_DIRS: ${JsonCpp_LIBRARY_DIRS}")
+message(STATUS "JsonCpp_LIBRARIES: ${JsonCpp_LIBRARIES}")
