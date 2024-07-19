@@ -16,7 +16,6 @@ $$
 U^{\star} = \argmax_U \sum_{t=0}^{T-1} x_t^T Q x_t + u_t^T R u_t + x_T^T Q_T x_T \\
 s.t. x_{t+1} = A x_t + B u_t \\
 x_0 = x_{init}
-
 $$
 
 Q, Q_T, R 为正定矩阵
@@ -44,7 +43,6 @@ $$
 求每个状态的最优控制 
 $$
 min_{u}Q_t(x_t,u_t) = x_t^T Q x_t + u_t^T R u_t + (Ax + Bu)^T P_{t+1}(Ax + Bu)  \\
-
 2R^T u_t  + 2B^T P_{t+1}(Ax_t + Bu_t)  = 0\\
 u_t = -(R^T + B^T P_{t+1} B)^{-1} B^T P_{t+1} A x_t
 \\ 
@@ -53,7 +51,6 @@ k_T = -(R + B^T P_{t+1} B)^{-1} B^T P_{t+1} A
 代入 Q 
 \\
 Q_t(x_t,u_t) = V_t(x_t) \\ 
-
 P_t = Q + A^T P_{t+1} A - A^T P_{t+1} B (R + B^T P_{t+1} B)^{-1} B^T P_{t+1} A \\ 离散迭代黎卡提方程
 $$
 
